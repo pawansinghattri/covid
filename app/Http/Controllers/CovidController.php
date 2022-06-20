@@ -28,7 +28,6 @@ class CovidController extends Controller
         return view('search', ['search'=>$search]);
 
         }
-        print_r($request->input('search'));
         $data->appends(['sort' => 'Country']);
         return view('welcome', ['data'=>$data]);
 
